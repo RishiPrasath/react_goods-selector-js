@@ -53,7 +53,7 @@ export const App = () => {
         {goods.map((good) => (
           <tr key={good} data-cy="Good" className={selectedGood === good ? 'has-background-success-light' : ''}>
             <td>
-              {selectedGood == good ? (
+              {selectedGood === good ? (
                 <button
                 onClick={handleClearSelection}
                 data-cy="RemoveButton"
